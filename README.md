@@ -45,18 +45,6 @@ Both projects use EEG data from subject **Candice** for training and evaluate ge
 
 ---
 
-## 📊 Model Comparison
-
-| Feature                        | Random Forest + MNE | U-Sleep CNN + Braindecode |
-|-------------------------------|---------------------|----------------------------|
-| Framework                     | MNE, scikit-learn   | Braindecode, PyTorch       |
-| Input                         | Single 30s epochs   | Sequences of 35×30s epochs |
-| Feature extraction            | Manual (PSD)        | Learned (CNN layers)       |
-| Accuracy                      | **74%**             | 44%                        |
-| Handles temporal context      | ❌                  | ✅                         |
-| Generalization to new subject| ✅ (Drake)          | Moderate                   |
-| Training time                 | Fast                | Slower (GPU recommended)   |
-| Customization                 | Easy                | More complex               |
 
 ---
 
